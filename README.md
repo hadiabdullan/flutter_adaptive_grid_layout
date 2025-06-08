@@ -222,10 +222,17 @@ On smaller screens, the sidebar moves below the main content, optimizing for ver
 ### Medium Layout (e.g., Tablet / Desktop Narrow)
 
 This layout provides a sidebar on the left and main content on the right, suitable for moderate screen widths.
+![Medium Layout Screenshot](images/medium.png)
+
+# Expanded Layout (e.g., Small Laptops)
+
+This layout provides a sidebar on the left and main content on the centre and details on the right.
+![Expanded Layout Screenshot](images/expanded.png)
 
 ### Large Layout (e.g., Desktop Wide)
 
 For expansive screens, additional panels (like details and ads) appear, utilizing the extra horizontal space.
+![Large Layout Screenshot](images/large.png)
 
 
 ⚙️ Advanced Usage & Notes

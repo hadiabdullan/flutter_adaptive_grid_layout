@@ -1,7 +1,10 @@
 name: flutter_adaptive_grid_layout
 description: "A Flutter package for declarative and flexible adaptive grid layouts for complex UIs."
-version: 0.0.1
-homepage:
+version: 0.1.0
+homepage: https://github.com/hadiabdullan/flutter_adaptive_grid_layout
+repository: https://github.com/hadiabdullan/flutter_adaptive_grid_layout/tree/master
+
+
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -15,6 +18,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
+
+topics:
+  - layout
+  - adaptive
+  - responsive
+  - grid
+  - ui
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

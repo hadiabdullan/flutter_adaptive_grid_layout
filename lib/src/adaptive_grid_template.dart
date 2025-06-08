@@ -112,8 +112,8 @@ class AdaptiveGridTemplate {
     required this.template,
     List<FlexSize>? columnSizes,
     List<FlexSize>? rowSizes,
-  })  : this.columnSizes = columnSizes ?? const [],
-        this.rowSizes = rowSizes ?? const [] {
+  })  : columnSizes = columnSizes ?? const [],
+        rowSizes = rowSizes ?? const [] {
     _parseTemplateInternal();
   }
 

@@ -197,9 +197,9 @@ void main() {
         (WidgetTester tester) async {
       // --- Test for compact layout (e.g., width <= 600) ---
       // Set a compact screen size for the test environment
-      tester.binding.window.physicalSizeTestValue =
+      tester.view.physicalSize =
           const Size(400 * 2.0, 800 * 2.0); // Logical 400px width
-      tester.binding.window.devicePixelRatioTestValue = 2.0;
+      tester.view.devicePixelRatio = 2.0;
       await tester.pumpAndSettle(); // Pump to apply new window size
 
       // Build the widget tree for the compact test
@@ -250,9 +250,9 @@ void main() {
 
       // --- Test for medium layout (e.g., width > 600 and <= 960) ---
       // Reset window size for medium breakpoint
-      tester.binding.window.physicalSizeTestValue =
+      tester.view.physicalSize =
           const Size(800 * 2.0, 600 * 2.0); // Logical 800px width
-      tester.binding.window.devicePixelRatioTestValue = 2.0;
+      tester.view.devicePixelRatio = 2.0;
       await tester.pumpAndSettle(); // Pump to apply new window size
 
       // Need to re-pump the widget to ensure it rebuilds with the new MediaQuery context
@@ -309,9 +309,9 @@ void main() {
     testWidgets('handles missing template for current size gracefully',
         (WidgetTester tester) async {
       // Set up a screen width that maps to AdaptiveLayoutSize.compact
-      tester.binding.window.physicalSizeTestValue =
+      tester.view.physicalSize =
           const Size(400 * 2.0, 600 * 2.0); // e.g., 400px width
-      tester.binding.window.devicePixelRatioTestValue = 2.0;
+      tester.view.devicePixelRatio = 2.0;
       await tester.pumpAndSettle();
 
       await tester.pumpWidget(
@@ -358,9 +358,8 @@ void main() {
     testWidgets('handles missing children for regions gracefully',
         (WidgetTester tester) async {
       // Set window size for MediaQuery to pick up, matching SizedBox width
-      tester.binding.window.physicalSizeTestValue =
-          const Size(400 * 2.0, 600 * 2.0);
-      tester.binding.window.devicePixelRatioTestValue = 2.0;
+      tester.view.physicalSize = const Size(400 * 2.0, 600 * 2.0);
+      tester.view.devicePixelRatio = 2.0;
       await tester.pumpAndSettle();
 
       await tester.pumpWidget(
@@ -413,9 +412,8 @@ void main() {
     testWidgets('calculates and applies fixed and flex sizes correctly',
         (WidgetTester tester) async {
       // Explicitly set window size for this test for Media Query to pick up
-      tester.binding.window.physicalSizeTestValue =
-          const Size(300 * 2.0, 400 * 2.0);
-      tester.binding.window.devicePixelRatioTestValue = 2.0;
+      tester.view.physicalSize = const Size(300 * 2.0, 400 * 2.0);
+      tester.view.devicePixelRatio = 2.0;
       await tester.pumpAndSettle(); // Apply new window size
 
       await tester.pumpWidget(
@@ -497,9 +495,8 @@ void main() {
     testWidgets('correctly handles a cell spanning multiple rows and columns',
         (WidgetTester tester) async {
       // Set window size for MediaQuery to pick up, matching SizedBox width
-      tester.binding.window.physicalSizeTestValue =
-          const Size(300 * 2.0, 300 * 2.0);
-      tester.binding.window.devicePixelRatioTestValue = 2.0;
+      tester.view.physicalSize = const Size(300 * 2.0, 300 * 2.0);
+      tester.view.devicePixelRatio = 2.0;
       await tester.pumpAndSettle();
 
       await tester.pumpWidget(

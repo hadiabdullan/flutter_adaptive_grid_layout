@@ -212,21 +212,21 @@ This defines a 3-row, 2-column grid where:
 
 See `flutter_adaptive_grid_layout` in action across different screen sizes:
 
-### Medium Layout (e.g., Tablet / Desktop Narrow)
-
-This layout provides a sidebar on the left and main content on the right, suitable for moderate screen widths.
-
 ### Compact Layout (e.g., Mobile Portrait)
 
 On smaller screens, the sidebar moves below the main content, optimizing for vertical space.
+
+![Compact Layout Screenshot](images/compact.png)
+
+
+### Medium Layout (e.g., Tablet / Desktop Narrow)
+
+This layout provides a sidebar on the left and main content on the right, suitable for moderate screen widths.
 
 ### Large Layout (e.g., Desktop Wide)
 
 For expansive screens, additional panels (like details and ads) appear, utilizing the extra horizontal space.
 
-### Mobile Landscape (iPhone 16 Pro Max)
-
-Demonstrates a horizontal layout for landscape mobile, adapting elements side-by-side where feasible. *(Note: Some overflow warnings in the screenshot might indicate areas for further content optimization on specific small-screen landscape layouts.)*
 
 ⚙️ Advanced Usage & Notes
 -------------------------
